@@ -12,7 +12,7 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
         
         <link rel="stylesheet" href="./css/styles.css">
-     
+        <link rel="stylesheet" href="./css/main.min.css">
     </head>
 <body>
     <header>
@@ -21,7 +21,7 @@
             <a class="logo main-nav__logo" href="#"> Web<span class="logo--dark">Studio</span></a>
         <nav >
             <ul class="nav">
-                <li class="nav__item" ><a class="nav__link nav--current"  href="./index.html">Студия</a> </li>
+                <li class="nav__item" ><a class="nav__link nav__link--current "  href="./index.html">Студия</a> </li>
                 <li class="nav__item"><a class="nav__link " href="./portfolio.html">Портфолио </a></li>
                 <li class="nav__item"><a class="nav__link" href="#">Контакты</a></li>
             </ul>
@@ -57,42 +57,42 @@
       <section class="section">
         <div class="container">
           <h2 hidden class="visualy-hidden"> Преимущества студии</h2>
-          <ul class="description">
-              <li class="description__item">
-                <div class="description__icon-bg">
+          <ul class="advantage">
+              <li class="advantage__item">
+                <div class="advantage__icon-bg">
                   <svg width="70" height="70">
                     <use href="./images/icos.svg#icon-antenna-1"></use>
                   </svg>
                 </div>
-               <h3 class="description__title">Внимание к деталям</h3>   
-               <p class="description__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
+               <h3 class="advantage__title">Внимание к деталям</h3>   
+               <p class="advantage__text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
               </li>
-              <li class="description__item">
-                <div class="description__icon-bg">
+              <li class="advantage__item">
+                <div class="advantage__icon-bg">
                   <svg width="70" height="70">
                     <use href="./images/icos.svg#icon-clock-1"></use>
                   </svg>
                 </div>
-                  <h3 class="description__title">Пунктуальность</h3>
-                  <p class="description__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
+                  <h3 class="advantage__title">Пунктуальность</h3>
+                  <p class="advantage__text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
               </li>
-              <li class="description__item">
-                <div class="description__icon-bg">
+              <li class="advantage__item">
+                <div class="advantage__icon-bg">
                   <svg width="70" height="70" >
                     <use href="./images/icos.svg#icon-diagram-1"></use>
                   </svg>
                 </div>
-                  <h3 class="description__title">Планирование</h3>
-                  <p class="description__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
+                  <h3 class="advantage__title">Планирование</h3>
+                  <p class="advantage__text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
               </li>
-              <li class="description__item">
-                <div class="description__icon-bg">
+              <li class="advantage__item">
+                <div class="advantage__icon-bg">
                   <svg width="70" height="70">
                     <use href="./images/icos.svg#icon-astronaut-1"></use>
                   </svg>
                 </div>
-                  <h3 class="description__title">Современные технологии</h3>
-                  <p class="description__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
+                  <h3 class="advantage__title">Современные технологии</h3>
+                  <p class="advantage__text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
               </li>
           </ul>
         </div>
@@ -287,9 +287,9 @@
           </ul>
         </div>
       </section>
-      <section class="clients-section">
+      <section class="section">
         <div class="container"> 
-          <h2 class="clients-section__title">Постоянные клиенты</h2>
+          <h2 class="section__title">Постоянные клиенты</h2>
             <ul class="clients">
               <li class="clients__item"> 
                 <a href="#" class="clients__link">
@@ -412,8 +412,8 @@
   <use href="./images/icos.svg#icon-close"></use>
 </svg>
 </button>
-<div class="call-back-form">
-<form class="form" name="call-back-form" action="#" autocomplete="off" novalidate>
+<div class="form">
+<form class="form__cb" name="call-back-form" action="#" autocomplete="off" novalidate>
 <h3 class="form__title">Оставьте свои данные, мы вам перезвоним</h3> 
   <label class="form__label" for="contact-name">Имя</label>
 <div class="form__field">

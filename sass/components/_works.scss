@@ -1,0 +1,57 @@
+.works{
+    display: flex;
+
+    &__text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--main-background-color);
+    background: rgba(47, 48, 58, 0.8);
+    }
+
+    &__dekstop-item{
+    position: relative;
+    }
+
+    &__text--position-dekstop{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+
+    &__mobile-item{
+    position: relative;
+    }
+
+    &__text--position-mobile{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+
+    &__design-item{
+    position: relative;
+    }
+
+    &__text--position-design{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    }
+
+    & &__item:not(:last-child){
+    margin-right: 30px;
+    }
+}
+.our-works{
+    padding-top: 0;
+}
