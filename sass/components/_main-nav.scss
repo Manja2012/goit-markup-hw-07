@@ -26,7 +26,7 @@
      transition-duration: 250ms;
      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
-    &__current{
+    &__link--current{
      position: relative;
      color: var(--accent-color);
     }
@@ -36,7 +36,8 @@
     &__link:focus {
      color: var(--accent-color);
     }
-    &__current::after{
+
+    &__link--current::after{
      content:'';
      position: absolute;
      margin-top: 29px;
