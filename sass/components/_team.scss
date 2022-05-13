@@ -1,21 +1,23 @@
 .team{
     display: flex;
-    
-    &__item{
+}
+.team__item{
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     width: 270px;
 
     background-color: var(--main-background-color);
+    
+    .team &:not(:last-child){
+    margin-right: 30px;
     }
-
-    &__position{
+}
+.team__position{
     padding-top: 30px;
     padding-bottom: 30px;
-    }
-
-    &__title{
+}
+.team__title{
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -24,49 +26,30 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--text-color);
-    }
-
-    & &__item:not(:last-child){
-    margin-right: 30px;
-    }
-
-    &__text {
+}
+.team__text {
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 0.03em;
     color: var(--text-contacts-color);
-    }
 }
-
-.our-team{
+.section--other-background{
     background-color: var(--frame-background-color);
-    
-    &__title{
-    margin-bottom: 50px;
-
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color:var(--text-color); 
-    }
 }
-.team-social{
+.social{
     display: flex;
     justify-content: center;
-    
-    & &__item:not(:last-child){
+}
+.social .social__item:not(:last-child){
     margin-left: 10px;
-    }
-    &__icon{
+}
+.social__icon{
     width: 20px;
     height: 20px;
     fill:currentColor;
-    }
-
-    &__link{
+}
+.social__link{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,13 +63,15 @@
     transition-property: color,background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
-    &__link:hover, 
-    &__link:focus{
+    
+    &:hover, 
+    &:focus{
     background-color: var(--accent-color);
     color: var(--main-background-color);
     }
 }
+
+    
+
 
 

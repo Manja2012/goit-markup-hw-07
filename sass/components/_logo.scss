@@ -8,13 +8,16 @@
     letter-spacing: 0.03em;
     text-decoration: none;
 
-    &--dark {
+    &__dark {
     color: var(--text-color);
     }
-    &--white {
+    &__white {
     color: var(--main-background-color); 
     }
 }
+.header__logo{
+    margin-right: 93px;
+    }
 .footer-address__logo{ 
     margin-bottom: 20px;
 }

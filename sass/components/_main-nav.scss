@@ -1,15 +1,14 @@
-.main-nav{
+.header__container{
     display: flex;
     align-items: center;
- 
-     &__logo{
+}
+.header__logo{
     margin-right: 93px;
     }
-}
 .nav{
      display: flex;
-
-    &__link{
+}
+.nav__link{
      display: block;
      padding-top: 32px;
      padding-bottom: 32px;
@@ -22,22 +21,18 @@
      color: var(--text-color);
      list-style: none;
 
-     transition-property: color;
-     transition-duration: 250ms;
-     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:hover,
+     &:focus {
+     color: var(--accent-color);
     }
-    &__link--current{
+}
+.nav__link--current{
      position: relative;
      color: var(--accent-color);
-    }
-    
-    &__link:hover,
- 
-    &__link:focus {
-     color: var(--accent-color);
-    }
-
-    &__link--current::after{
+     
+     &::after{
      content:'';
      position: absolute;
      margin-top: 29px;
@@ -47,7 +42,7 @@
      background:var(--accent-color);
      border-radius: 2px;
     }
-    & &__item:not(:last-child){
+}
+.nav .nav__item:not(:last-child){
      margin-right: 50px;
-    }
 }
